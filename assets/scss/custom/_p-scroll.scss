@@ -1,0 +1,89 @@
+.bs-popover-top, .bs-popover-auto[x-placement^="top"] {
+	margin-block-end: 0.5rem;
+}
+.bs-popover-top .arrow, .bs-popover-auto[x-placement^="top"] .arrow {
+	inset-block-end: calc((0.5rem + 1px) * -1);
+}
+.bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before, .bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+	border-width: 0.5rem 0.25rem 0;
+}
+.bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
+	inset-block-end: 0;
+	border-block-start-color: rgba(0, 0, 0, 0.25);
+}
+.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+	inset-block-end: 1px;
+	border-block-start-color: #fff;
+}
+.bs-popover-right, .bs-popover-auto[x-placement^="right"] {
+	margin-inline-start: 0.5rem;
+}
+.bs-popover-right .arrow, .bs-popover-auto[x-placement^="right"] .arrow {
+	inset-inline-start: calc((0.5rem + 1px) * -1);
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 3px 0;
+}
+.bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before, .bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+	border-width: 0.25rem 0.5rem 0.25rem 0;
+}
+.bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
+	inset-inline-start: 0;
+	border-inline-end-color: #dee3eb;
+}
+.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+	inset-inline-start: 1px;
+	border-inline-end-color: #fff;
+}
+.bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
+	margin-block-start: 0.5rem;
+}
+.bs-popover-bottom .arrow, .bs-popover-auto[x-placement^="bottom"] .arrow {
+	inset-block-start: calc((0.5rem + 1px) * -1);
+}
+.bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before, .bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+	border-width: 0 0.25rem 0.5rem 0.25rem;
+}
+.bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
+	inset-block-start: 0;
+	border-block-end-color: #dee3eb;
+}
+.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+	inset-block-start: 1px;
+	border-block-end-color: #fff;
+}
+.bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: 50%;
+	display: block;
+	width: 0.5rem;
+	margin-inline-start: -0.25rem;
+	content: "";
+	border-block-end: 1px solid #fff;
+}
+.bs-popover-left, .bs-popover-auto[x-placement^="left"] {
+	margin-inline-end: 0.5rem;
+}
+.bs-popover-left .arrow, .bs-popover-auto[x-placement^="left"] .arrow {
+	inset-inline-end: calc((0.5rem + 1px) * -1);
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 3px 0;
+}
+.bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before, .bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+	border-width: 0.25rem 0 0.25rem 0.5rem;
+}
+.bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
+	inset-inline-end: 0;
+	border-inline-start-color: #dee3eb;
+}
+.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+	inset-inline-end: 1px;
+	border-inline-start-color: #fff;
+}
+.popover {
+	&.bs-popover-top, &.bs-popover-auto[x-placement^="top"] {
+		margin-block-end: 0.625rem;
+	}
+}

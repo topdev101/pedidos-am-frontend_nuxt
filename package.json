@@ -1,0 +1,47 @@
+{
+  "name": "pedidos-am",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --port 3001",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/router": "^1.7.0",
+    "axios": "^0.21.4",
+    "bootstrap": "^5.3.2",
+    "core-js": "^3.25.3",
+    "dotenv": "^16.3.1",
+    "echarts": "^4.2.0-rc.1",
+    "js-cookie": "^3.0.5",
+    "nuxt": "^2.15.8",
+    "sweetalert2": "^11.7.31",
+    "v-viewer": "^1.6.4",
+    "vform": "^2.1.2",
+    "vue": "^2.7.10",
+    "vue-axios": "^3.5.2",
+    "vue-echarts-v3": "^1.0.19",
+    "vue-i18n": "^8.28.2",
+    "vue-infinite-loading": "^2.4.5",
+    "vue-js-modal": "^2.0.1",
+    "vue-multiselect": "^2.1.7",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+    "vue-toast-notification": "^0.6.2",
+    "vue2-daterange-picker": "^0.6.8",
+    "vue2-timepicker": "^1.1.6",
+    "vuejs-datepicker": "^1.6.2",
+    "vuejs-loading-screen": "^1.10.2",
+    "vuejs-paginate": "^2.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/ngrok": "^2.0.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "sass": "^1.58.0",
+    "sass-loader": "^10.1.1"
+  }
+}

@@ -1,0 +1,159 @@
+@media (max-width: 320px) {
+	.fc-toolbar .fc-right {
+		float: right;
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+// .fc-toolbar:before, .login-content:after {
+// 	content: "";
+// }
+#footer, .fc-toolbar .ui-button, .fileinput .thumbnail {
+	text-align: center;
+}
+.four-zero {
+	text-align: center;
+	footer>a {
+		text-align: center;
+	}
+}
+.ie-warning, .login-content, .login-navigation {
+	text-align: center;
+}
+.pt-inner {
+	text-align: center;
+	.pti-footer>a {
+		text-align: center;
+	}
+}
+.mf-date {
+	display: block;
+	margin-block-start: 7px;
+	>i {
+		font-size: 14px;
+		line-height: 100%;
+		position: relative;
+		inset-block-start: 1px;
+	}
+}
+.msb-reply {
+	position: relative;
+	margin-block-start: 3px;
+	background: rgb(var(--white));
+	padding: 10px;
+	border-radius: 0 7px 7px 7px;
+}
+.four-zero, .lc-block {
+	box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+}
+.msb-reply {
+	textarea {
+		width: 100%;
+		font-size: 13px;
+		border: 0;
+		padding: 10px 15px;
+		resize: none;
+		background: 0 0;
+	}
+	button {
+		inset-block-start: 0;
+		inset-inline-end: 0;
+		border: 0;
+		height: 100%;
+		width: 60px;
+		font-size: 20px;
+		color: #fff;
+		// border-radius: 0 3px 3px 0;
+		border-start-start-radius: 0px;
+		border-start-end-radius: 3px;
+		border-end-end-radius: 3px;
+		border-end-start-radius: 0px;
+		line-height: 44px;
+	}
+}
+.richText {
+	.richText-toolbar {
+		ul li a {
+			border-inline-end: rgba(156, 162, 161, 0.2) solid 1px;
+		}
+		border-block-end: rgba(156, 162, 161, 0.1) solid 1px;
+	}
+	border: $border solid 1px;
+	background-color: $background;
+}
+.cal1 {
+	.clndr {
+		.clndr-table {
+			.header-days .header-day {
+				border-inline-start: 1px solid $border;
+				border-block-start: 1px solid $border;
+			}
+			tr {
+				.empty, .adjacent-month, .my-empty, .my-adjacent-month {
+					border-inline-start: 1px solid $border;
+					border-block-start: 1px solid $border;
+					background: $background;
+				}
+				.day {
+					&.event, &.my-event {
+						background: $background;
+					}
+					border-inline-start: 1px solid $border;
+					border-block-start: 1px solid $border;
+					&:last-child {
+						border-inline-end: 1px solid $border;
+					}
+					&:hover {
+						background: $background;
+					}
+				}
+			}
+		}
+		.clndr-controls .clndr-control-button {
+			.clndr-previous-button, .clndr-next-button {
+				color: #fff;
+			}
+		}
+	}
+	font-size: 14px;
+}
+.fc-unthemed {
+	.fc-content, .fc-divider, .fc-list-heading td, .fc-list-view, .fc-popover, .fc-row, tbody, td, th, thead {
+		border-color: #eaedf1;
+	}
+}
+.fc-event, .fc-event-dot {
+	color: #eaedf1 ! important;
+}
+.fc-unthemed {
+	.fc-divider, .fc-list-heading td, .fc-popover .fc-header {
+		background: #e2e3e4;
+	}
+}
+.fc-toolbar {
+	.fc-state-active, .ui-state-active {
+		background: #b4b4b4;
+	}
+}
+.fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-disabled:focus {
+	border: none !important;
+	box-shadow: none !important;
+}
+.fc-unthemed .fc-list-item:hover td {
+	background-color: #eeeeee;
+}
+.conv-form-wrapper div#messages div.message.to {
+	background: $background;
+}
+#sidebar li a.active {
+	background: #fff;
+	a[data-bs-toggle="collapse"] {
+		background: #Fff;
+	}
+}
+.cal1 .clndr .clndr-table tr {
+	.empty:hover, .adjacent-month:hover, .my-empty:hover, .my-adjacent-month:hover {
+		background: $background;
+	}
+}

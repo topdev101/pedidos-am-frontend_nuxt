@@ -1,0 +1,109 @@
+.item-card {
+	.cardbody {
+		position: relative;
+		padding: 30px 15px;
+		border-radius: 0 0 .2rem .2rem;
+	}
+	.cardtitle {
+		span {
+			display: block;
+			font-size: .75rem;
+		}
+		a {
+			color: #707070;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+	.cardprice {
+		position: absolute;
+		inset-block-start: 30px;
+		inset-inline-end: 15px;
+		span {
+			&.type--strikethrough {
+				opacity: .7;
+				text-decoration: line-through;
+			}
+			display: block;
+			color: #707070;
+		}
+	}
+}
+.item-card-img {
+	overflow: hidden;
+}
+.item-card2-img {
+	position: relative;
+	overflow: hidden;
+	border-start-end-radius: 2px;
+	border-start-start-radius: 2px;
+}
+/*
+.item-card2-img a{
+	position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+*/
+
+.item-card2-desc ul li {
+	margin-inline-end: 1.5rem;
+	font-size: 13px;
+	&:last-child {
+		margin-inline-end: 0;
+	}
+}
+/*--item-card2--*/
+
+.item-card2-icons {
+	position: absolute;
+	inset-block-start: 20px;
+	inset-inline-end: 15px;
+	z-index: 999;
+	a {
+		width: 2rem;
+		display: inline-block;
+		height: 2rem;
+		text-align: center;
+		border-radius: 100px;
+		line-height: 2.1rem;
+		border-radius: 50px;
+		color: #fff;
+	}
+}
+.service .item-box i {
+	font-size: 35px;
+}
+.item-list .list-group-item {
+	border: 0;
+	margin-block-end: 0;
+	border-block-end: 1px solid rgba(167, 180, 201, 0.3);
+	i {
+		margin-inline-end: 5px;
+		width: 25px;
+		height: 25px;
+		border-radius: 2px;
+		font-size: 12px;
+		text-align: center;
+		line-height: 25px;
+		color: #fff !important;
+	}
+}
+/*--item-user--*/
+
+.item-user .item-user-icons a {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	border-radius: 100px;
+	line-height: 2rem;
+	margin-block-start: 0.3rem;
+	&:hover {
+		color: #fff;
+	}
+}

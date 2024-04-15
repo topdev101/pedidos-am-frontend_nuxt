@@ -1,0 +1,317 @@
+@import 'bootstrap';
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+==========================================================================================================================================
+Project                        :   FLAIRA - HTML5 Bootstrap Admin Template
+==========================================================================================================================================
+Create Date                    :   29/12/20
+------------------------------------------------------------------------------------------------------------------------------------------
+Author & Copyright Ownership   :   Spruko Technologies Private Limited 
+------------------------------------------------------------------------------------------------------------------------------------------
+Author URL                     :   https://themeforest.net/user/spruko
+------------------------------------------------------------------------------------------------------------------------------------------
+Support		               :   https://support.spruko.com/
+------------------------------------------------------------------------------------------------------------------------------------------
+License Details                :   https://spruko.com/licenses-details
+------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------*/
+
+/*
+
+accordions
+alerts
+avathar
+badges
+bootstrap-custom
+breadcrumbs
+buttons
+cards
+carousel
+dropdown
+forms
+grid
+input-group
+modals
+navigation
+pagination
+panel
+popover
+progress
+ribbons
+tables
+tooltip
+components-col
+custom-control
+custom-range
+custom-styles
+highlight
+Ie-styles
+image
+jumborton
+label
+list
+listgroup
+loader
+media
+p-scroll
+rating
+tabs
+tags
+timeline
+color
+double-menu-style
+flag
+foote
+heade
+horizontal-men
+iconba
+item-card
+sideba
+sidemen
+skin-mode
+rt
+char
+datepicke
+form-wizar
+jqstoolti
+jqvma
+select
+select-grou
+selectiz
+accordion
+c3-chart
+clndr
+daterangepicker
+dtree
+examples
+fancy-fileupload
+fileupload
+flipclock
+fullcalendar
+gallery
+icons
+ion.rangeSlider
+ion.rangeSlider.skinSimple
+jquery.countdown
+jquery.growl
+jquery.timepicker
+jquerysctipttop
+leaflet
+main
+morris
+multiple-select
+normalize.min
+normalize
+nv.d3
+owl.carousel
+perfect-scrollbar
+plugin
+richtext
+sample
+select2.min
+sidemenu-light
+site
+smart_wizard_theme_arrows.min
+smart_wizard_theme_arrows
+smart_wizard_theme_circles.min
+smart_wizard_theme_circles
+smart_wizard_theme_dots.min
+smart_wizard_theme_dots
+smart_wizard.min
+smart_wizard
+spectrum
+summernote-bs4
+summernote-lite
+summernote
+sumoselect
+sweetalert
+tabs
+telephoneinput
+tree-view
+body-style
+boxed
+color-header
+color-menu
+dark-header
+dark-menu
+dark-theme
+gradient-header
+gradient-menu
+light-header
+light-menu
+scrollable-layout
+calendar
+chat
+error
+mail
+maps
+pricing
+profile
+spinner
+widget
+alignments
+background
+border
+display
+flex
+float-styles
+height
+margin
+padding
+position
+typography
+width
+
+*/
+
+
+
+/* ########## BOOTSTRAP OVERRIDES ########## */
+
+
+@import "custom/fonts/_fonts.scss";
+@import "variables";
+
+
+@import "bootstrap/accordions";
+@import "bootstrap/alerts";
+@import "bootstrap/avathar";
+@import "bootstrap/badges";
+@import "bootstrap/bootstrap-custom";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/buttons";
+@import "bootstrap/cards";
+@import "bootstrap/carousel";
+@import "bootstrap/dropdown";
+@import "bootstrap/forms";
+@import "bootstrap/grid";
+@import "bootstrap/input-group";
+@import "bootstrap/modals";
+@import "bootstrap/navigation";
+@import "bootstrap/pagination";
+@import "bootstrap/panel";
+@import "bootstrap/popover";
+@import "bootstrap/progress";
+@import "bootstrap/ribbons";
+@import "bootstrap/tables";
+@import "bootstrap/tooltip";
+
+
+/* ############### CUSTOM ELEMENT STYLES ############### */
+@import "custom/components-col";
+@import "custom/custom-control";
+@import "custom/custom-range";
+@import "custom/custom-styles";
+@import "custom/highlight";
+@import "custom/Ie-styles";
+@import "custom/image";
+@import "custom/label";
+@import "custom/list";
+@import "custom/listgroup";
+@import "custom/loader";
+@import "custom/media";
+@import "custom/p-scroll";
+@import "custom/rating";
+@import "custom/tabs";
+@import "custom/tags";
+@import "custom/timeline";
+
+
+/* ########## LAYOUTS  ########## */
+
+
+@import "layouts/color1";
+@import "layouts/double-menu-styles";
+// @import "layouts/flags";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/horizontal-menu";
+@import "layouts/iconbar";
+@import "layouts/item-cards";
+@import "layouts/sidebar";
+@import "layouts/sidemenu";
+@import "layouts/skin-modes";
+
+
+/* ############### LIBRARY ############### */
+@import "lib/chart";
+@import "lib/datepicker";
+@import "lib/form-wizard";
+// @import "lib/jqstooltip";
+@import "lib/jqvmap";
+@import "lib/mail";
+@import "lib/select2";
+@import "lib/select-group";
+@import "lib/selectize";
+
+
+/* ############### PLUGINS ############### */
+
+@import "plugins/main";
+@import "plugins/spectrum";
+@import "plugins/telephoneinput";
+@import "plugins/_sidemenu-light";
+// @import "plugins/sweetalert";
+
+
+/* ############### SWITCHER STYLES ############### */
+
+@import "switcher/body-style";
+@import "switcher/boxed";
+@import "switcher/color-header";
+@import "switcher/color-menu";
+@import "switcher/dark-header";
+@import "switcher/dark-menu";
+@import "switcher/dark-theme";
+@import "switcher/gradient-header";
+@import "switcher/gradient-menu";
+@import "switcher/light-header";
+@import "switcher/light-menu";
+@import "switcher/scrollable-layout";
+
+
+
+/* ############### TEMPLATE STYLES ############### */
+@import "template/calendar";
+@import "template/chat";
+@import "template/error";
+@import "template/mail";
+@import "template/maps";
+@import "template/pricing";
+@import "template/profile";
+@import "template/spinner";
+@import "template/widget";
+
+
+/* ############### UTILITIES/HELPER CLASSES ############### */
+@import "util/alignments";
+@import "util/background";
+@import "util/border";
+@import "util/display";
+@import "util/flex";
+@import "util/float-styles";
+@import "util/height";
+@import "util/margin";
+@import "util/padding";
+@import "util/position";
+@import "util/typography";
+@import "util/width";
+
+
+
+
+
+
+@import '~sweetalert2/src/sweetalert2';
+
+@import 'elements/card';
+@import 'elements/buttons';
+@import 'elements/transitions';
+
+@import "~vue-multiselect/dist/vue-multiselect.min";
+
+@import 'custom';
+@import 'icons';

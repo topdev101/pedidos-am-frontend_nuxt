@@ -1,0 +1,234 @@
+.iti {
+  position: relative;
+  display: inline-block;
+
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+}
+
+.iti__hide {
+  display: none;
+}
+
+.iti__v-hide {
+  visibility: hidden;
+}
+
+.iti input {
+  position: relative;
+  z-index: 0;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  padding-inline-end: 36px;
+  margin-inline-end: 0;
+
+  &[type=text], &[type=tel] {
+    position: relative;
+    z-index: 0;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    padding-inline-end: 36px;
+    margin-inline-end: 0;
+  }
+}
+
+.iti__flag-container {
+  position: absolute;
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  padding: 1px;
+}
+
+.iti__selected-flag {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-block-start: 0;
+  padding-inline-end: 6px;
+  padding-block-end: 0;
+  padding-inline-start: 8px;
+  border-inline-end: 1px solid $border;
+}
+
+.iti__arrow {
+  margin-inline-start: 6px;
+  width: 0;
+  height: 0;
+  border-inline-start: 3px solid transparent;
+  border-inline-end: 3px solid transparent;
+  border-block-start: 4px solid #555;
+  border-color: #a8afc7 transparent transparent transparent;
+}
+
+.iti__arrow--up {
+  border-block-start: none;
+  border-block-end: 4px solid #555;
+}
+
+.iti__country-list {
+  position: absolute;
+  z-index: 9;
+  list-style: none;
+  text-align: start;
+  padding: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-block-end: 0;
+  margin-inline-start: -1px;
+  box-shadow: 0 8px 16px 0 rgba(162, 169, 204, 0.24);
+  background-color: rgb(var(--white));
+  white-space: nowrap;
+  max-height: 200px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.iti__country-list--dropup {
+  inset-block-end: 100%;
+  margin-block-end: -1px;
+}
+
+@media (max-width: 500px) {
+  .iti__country-list {
+    white-space: normal;
+  }
+}
+
+.iti__flag-box {
+  display: inline-block;
+  width: 20px;
+}
+
+.iti__divider {
+  padding-block-end: 5px;
+  margin-block-end: 5px;
+  border-block-end: 1px solid $border;
+}
+
+.iti__country {
+  padding: 5px 10px;
+  outline: none;
+}
+
+.iti__dial-code {
+  color: #99a6b7;
+}
+
+.iti__country.iti__highlight {
+  background-color: $background;
+}
+
+.iti__flag-box, .iti__country-name, .iti__dial-code {
+  vertical-align: middle;
+}
+
+.iti__flag-box, .iti__country-name {
+  margin-inline-end: 6px;
+}
+
+.iti--allow-dropdown input {
+  padding-inline-end: 6px;
+  padding-inline-start: 52px;
+  margin-inline-start: 0;
+  outline: 0;
+
+  &[type=text], &[type=tel] {
+    padding-inline-end: 6px;
+    padding-inline-start: 52px;
+    margin-inline-start: 0;
+    outline: 0;
+  }
+}
+
+.iti--separate-dial-code input {
+  padding-inline-end: 6px;
+  padding-inline-start: 52px;
+  margin-inline-start: 0;
+  outline: 0;
+
+  &[type=text], &[type=tel] {
+    padding-inline-end: 6px;
+    padding-inline-start: 52px;
+    margin-inline-start: 0;
+    outline: 0;
+  }
+}
+
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+}
+
+.iti--allow-dropdown {
+  .iti__flag-container:hover {
+    cursor: pointer;
+
+    .iti__selected-flag {
+      background-color: $background;
+      outline: 0;
+    }
+  }
+
+  input {
+    &[disabled] + .iti__flag-container:hover, &[readonly] + .iti__flag-container:hover {
+      cursor: default;
+    }
+
+    &[disabled] + .iti__flag-container:hover .iti__selected-flag, &[readonly] + .iti__flag-container:hover .iti__selected-flag {
+      background-color: transparent;
+    }
+  }
+}
+
+.iti--separate-dial-code {
+  .iti__selected-flag {
+    background-color: #f1f2f9;
+  }
+
+  .iti__selected-dial-code {
+    margin-inline-start: 6px;
+  }
+}
+
+.iti--container {
+  position: absolute;
+  inset-block-start: -1000px;
+  inset-inline-start: -1000px;
+  z-index: 1024;
+  padding: 1px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.iti-mobile {
+  .iti--container {
+    inset-block-start: 30px;
+    inset-block-end: 30px;
+    inset-inline-start: 30px;
+    inset-inline-end: 30px;
+    position: fixed;
+  }
+
+  .iti__country-list {
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .iti__country {
+    padding: 10px 10px;
+    line-height: 1.5em;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-size: 5652px 15px;
+  }
+}

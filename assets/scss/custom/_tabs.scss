@@ -1,0 +1,41 @@
+.tabs-menu ul li {
+	a {
+		padding: 10px 20px 11px 20px;
+		display: block;
+		border-radius: 5px;
+	}
+	.active {
+		color: #fff;
+		border-radius: 5px;
+	}
+}
+.tabs-menu1 ul li a {
+	padding: 10px 20px 11px 20px;
+	display: block;
+}
+.tabs-menu-body {
+	border: 1px solid $border;
+	p:last-child {
+		margin-block-end: 0;
+	}
+}
+.tab-menu-heading {
+	padding: 20px;
+	border: 1px solid $border;
+	border-block-end: 0 !important;
+}
+.tab_wrapper .content_wrapper .tab_content.active p:last-child {
+	margin-block-end: 0;
+}
+.tabs-menu2 ul li {
+	a {
+		color: #636262;
+		padding: 10px 20px 11px 20px;
+	}
+	.active {
+		font-weight: 600;
+	}
+	.fade {
+		color: #eeee;
+	}
+}

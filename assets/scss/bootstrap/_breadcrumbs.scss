@@ -1,0 +1,105 @@
+/*------ Breadcrumb ------*/
+
+.breadcrumb {
+	display: flex;
+	flex-wrap: wrap;
+	margin-block-end: 0;
+	list-style: none;
+	border-radius: 3px;
+	position: relative;
+	inset-inline-end: 0;
+	padding: 0;
+	color: #fff;
+	background: none;
+}
+.breadcrumb-item {
+	a {
+		color: $color;
+	}
+	+.breadcrumb-item {
+		&::before {
+			display: inline-block;
+			padding-inline-end: 0.5rem;
+			padding-inline-start: 0.5rem;
+			color: #ccc;
+			content: "/";
+		}
+		&:hover::before {
+			text-decoration: underline;
+			text-decoration: none;
+		}
+	}
+}
+.breadcrumb1 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: .75rem 1rem;
+	margin-block-end: 1rem;
+	list-style: none;
+	background-color: $background;
+	border-radius: .25rem;
+}
+.breadcrumb-item1 {
+	a:hover {
+		color: $color;
+		text-decoration: underline;
+	}
+	+.breadcrumb-item1 {
+		&::before {
+			display: inline-block;
+			padding-inline-end: 0.5rem;
+			padding-inline-start: 0.5rem;
+			content: "/";
+			color: $black-5;
+		}
+		&:hover::before {
+			text-decoration: underline;
+			text-decoration: none;
+		}
+	}
+	&.active {
+		color: $primary;
+	}
+}
+.breadcrumb-3 {
+	ol {
+		position: relative;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	li {
+		display: contents;
+		text-align: center;
+	}
+}
+.breadcrumb-4 li, .breadcrumb-5 li {
+	display: contents;
+	text-align: center;
+}
+.breadcrumb-4 ol, .breadcrumb-5 ol {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.breadcrumb-1 li, .breadcrumb-2 li, .breadcrumb-6 li {
+	text-align: end;
+	display: contents;
+}
+.breadcrumb-1 ol, .breadcrumb-2 ol, .breadcrumb-6 ol {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: end;
+}
+@media (min-width: 768px) {
+	.page-breadcrumb {
+		margin: -.5rem 0 0;
+	}
+}
+.breadcrump-tittle {
+	color: $color;
+	font-weight: 500;
+	font-size: 21px;
+}
